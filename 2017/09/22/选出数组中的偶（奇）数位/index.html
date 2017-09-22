@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>选出数组中的偶（奇）数位的几种方法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="选出数组中的偶（奇）数位的几种方法 以选出偶数位为例1，普通循环方法123456let a = collection.length; for(let i = 0; i &amp;lt; a; i ++)&amp;#123;     if(i % a != 0)&amp;#123;         result.push(collection[i])     &amp;#125; &amp;#125; 这种方法简单易懂，是我们第一时间就能">
+  <meta name="description" content="以选出偶数位为例1，普通循环方法123456let a = collection.length; for(let i = 0; i &amp;lt; a; i ++)&amp;#123;     if(i % a != 0)&amp;#123;         result.push(collection[i])     &amp;#125; &amp;#125; 这种方法简单易懂，是我们第一时间就能想到的方法，这里就不多加解释。 2，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="选出数组中的偶（奇）数位的几种方法">
 <meta property="og:url" content="http://yoursite.com/2017/09/22/选出数组中的偶（奇）数位/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="选出数组中的偶（奇）数位的几种方法 以选出偶数位为例1，普通循环方法123456let a = collection.length; for(let i = 0; i &amp;lt; a; i ++)&amp;#123;     if(i % a != 0)&amp;#123;         result.push(collection[i])     &amp;#125; &amp;#125; 这种方法简单易懂，是我们第一时间就能">
-<meta property="og:updated_time" content="2017-09-22T13:26:35.958Z">
+<meta property="og:description" content="以选出偶数位为例1，普通循环方法123456let a = collection.length; for(let i = 0; i &amp;lt; a; i ++)&amp;#123;     if(i % a != 0)&amp;#123;         result.push(collection[i])     &amp;#125; &amp;#125; 这种方法简单易懂，是我们第一时间就能想到的方法，这里就不多加解释。 2，">
+<meta property="og:updated_time" content="2017-09-22T13:44:02.531Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="选出数组中的偶（奇）数位的几种方法 以选出偶数位为例1，普通循环方法123456let a = collection.length; for(let i = 0; i &amp;lt; a; i ++)&amp;#123;     if(i % a != 0)&amp;#123;         result.push(collection[i])     &amp;#125; &amp;#125; 这种方法简单易懂，是我们第一时间就能">
+<meta name="twitter:title" content="选出数组中的偶（奇）数位的几种方法">
+<meta name="twitter:description" content="以选出偶数位为例1，普通循环方法123456let a = collection.length; for(let i = 0; i &amp;lt; a; i ++)&amp;#123;     if(i % a != 0)&amp;#123;         result.push(collection[i])     &amp;#125; &amp;#125; 这种方法简单易懂，是我们第一时间就能想到的方法，这里就不多加解释。 2，">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -73,10 +73,19 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      选出数组中的偶（奇）数位的几种方法
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>选出数组中的偶（奇）数位的几种方法
-</code></pre><p>以选出偶数位为例<br>1，普通循环方法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> a = collection.length;</div><div class="line"> <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; a; i ++)&#123;</div><div class="line">     <span class="keyword">if</span>(i % a != <span class="number">0</span>)&#123;</div><div class="line">         result.push(collection[i])</div><div class="line">     &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+        <p>以选出偶数位为例<br>1，普通循环方法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> a = collection.length;</div><div class="line"> <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; a; i ++)&#123;</div><div class="line">     <span class="keyword">if</span>(i % a != <span class="number">0</span>)&#123;</div><div class="line">         result.push(collection[i])</div><div class="line">     &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
 <p>这种方法简单易懂，是我们第一时间就能想到的方法，这里就不多加解释。</p>
 <p>2，indexOf方法</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> collection)&#123;</div><div class="line">       <span class="keyword">if</span>(collection.indexOf(item) % <span class="number">2</span>  != <span class="number">0</span>)&#123;</div><div class="line">           result.push(item)</div><div class="line">       &#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
@@ -90,7 +99,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/22/选出数组中的偶（奇）数位/" data-id="cj7vx7ned0000qgqca7btj1c3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/22/选出数组中的偶（奇）数位/" data-id="cj7vxumyg0001osqc9wumnwsx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,7 +148,7 @@
       <ul>
         
           <li>
-            <a href="/2017/09/22/选出数组中的偶（奇）数位/">(no title)</a>
+            <a href="/2017/09/22/选出数组中的偶（奇）数位/">选出数组中的偶（奇）数位的几种方法</a>
           </li>
         
           <li>

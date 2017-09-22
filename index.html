@@ -71,10 +71,19 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/22/选出数组中的偶（奇）数位/">选出数组中的偶（奇）数位的几种方法</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>选出数组中的偶（奇）数位的几种方法
-</code></pre><p>以选出偶数位为例<br>1，普通循环方法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> a = collection.length;</div><div class="line"> <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; a; i ++)&#123;</div><div class="line">     <span class="keyword">if</span>(i % a != <span class="number">0</span>)&#123;</div><div class="line">         result.push(collection[i])</div><div class="line">     &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+        <p>以选出偶数位为例<br>1，普通循环方法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> a = collection.length;</div><div class="line"> <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; a; i ++)&#123;</div><div class="line">     <span class="keyword">if</span>(i % a != <span class="number">0</span>)&#123;</div><div class="line">         result.push(collection[i])</div><div class="line">     &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
 <p>这种方法简单易懂，是我们第一时间就能想到的方法，这里就不多加解释。</p>
 <p>2，indexOf方法</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> collection)&#123;</div><div class="line">       <span class="keyword">if</span>(collection.indexOf(item) % <span class="number">2</span>  != <span class="number">0</span>)&#123;</div><div class="line">           result.push(item)</div><div class="line">       &#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
@@ -88,7 +97,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/22/选出数组中的偶（奇）数位/" data-id="cj7vx7ned0000qgqca7btj1c3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/22/选出数组中的偶（奇）数位/" data-id="cj7vxumyg0001osqc9wumnwsx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/17/hello-world/" data-id="cj7vx7nen0001qgqcq4p5mvas" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/17/hello-world/" data-id="cj7vxumyg0000osqc7u6ag4wk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -173,7 +182,7 @@
       <ul>
         
           <li>
-            <a href="/2017/09/22/选出数组中的偶（奇）数位/">(no title)</a>
+            <a href="/2017/09/22/选出数组中的偶（奇）数位/">选出数组中的偶（奇）数位的几种方法</a>
           </li>
         
           <li>
