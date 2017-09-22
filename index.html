@@ -73,15 +73,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>选出数组中的偶（奇）数位的几种方法</p>
-<p>以选出偶数位为例<br>1，普通循环方法</p>
+        <pre><code>选出数组中的偶（奇）数位的几种方法
+</code></pre><p>以选出偶数位为例<br>1，普通循环方法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> a = collection.length;</div><div class="line"> <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; a; i ++)&#123;</div><div class="line">     <span class="keyword">if</span>(i % a != <span class="number">0</span>)&#123;</div><div class="line">         result.push(collection[i])</div><div class="line">     &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+<p>这种方法简单易懂，是我们第一时间就能想到的方法，这里就不多加解释。</p>
 <p>2，indexOf方法</p>
-<p>3，splice方法<br><img src="http://owomacysi.bkt.clouddn.com/TIM%E5%9B%BE%E7%89%8720170922205020.png" alt=""></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> collection)&#123;</div><div class="line">       <span class="keyword">if</span>(collection.indexOf(item) % <span class="number">2</span>  != <span class="number">0</span>)&#123;</div><div class="line">           result.push(item)</div><div class="line">       &#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>indexOf方法会返回数组中指定元素的下标，例子中collection.indexOf(item)相当于是元素item的下标。filter方法可以和indexOf方法同用达到同样的效果。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> even_bit_array = collection.filter(<span class="function"><span class="keyword">function</span>(<span class="params">value,index</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span>(index % <span class="number">2</span> === <span class="number">0</span>)&#123;</div><div class="line">        <span class="keyword">return</span> value ;</div><div class="line">    &#125;</div><div class="line">&#125;) ;</div></pre></td></tr></table></figure>
+<p>这种方法与第一种方法基本思路相同，都是通过下标找到所需要的元素，并放到一个空数组中，不改变原数组。</p>
+<p>3，splice方法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; collection.length; i++)&#123;</div><div class="line">     collection.splice(i,<span class="number">1</span>);</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+<p>splice 方法通过删除现有元素和/或添加新元素来更改一个数组的内容。例子中collection.splice(i,1)的实际效果是删除数组collection中下标从i开始的1个元素，也就是下标为i的元素。此方法会改变原数组的值和长度，最后collection数组中只剩下原数组中偶数位上的数。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf" target="_blank" rel="external">indexOf方法链接</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="external">filter方法链接</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" target="_blank" rel="external">splice方法链接</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/22/选出数组中的偶（奇）数位/" data-id="cj7vw89f10001y0qcqxdvyxl1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/22/选出数组中的偶（奇）数位/" data-id="cj7vx7ned0000qgqca7btj1c3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -126,7 +133,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/17/hello-world/" data-id="cj7vw89ce0000y0qc1nx8fvm9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/17/hello-world/" data-id="cj7vx7nen0001qgqcq4p5mvas" class="article-share-link">Share</a>
       
       
     </footer>
